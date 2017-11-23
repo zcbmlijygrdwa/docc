@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 #ifndef DOCC_H
 #define DOCC_H
+=======
+>>>>>>> b9834d0b10c80870db1c58da0ad910a8f0826da0
 /*===================================
   This is class for Dual Object Camera Controller (DOCC).
   This controller requires 3 inputs and produces 3 outputs.
@@ -144,7 +147,11 @@ class DOCC
 		PID pid_forward_v;	//control camera forward
 		PID pid_obj1_v;	//control the velocity in x
 		PID pid_obj2_v;	//control the velocity in y
+<<<<<<< HEAD
 		PID pid_objDistS_v;	//control the velocity in y
+=======
+
+>>>>>>> b9834d0b10c80870db1c58da0ad910a8f0826da0
 
 
 		//===================================
@@ -171,4 +178,8 @@ class DOCC
 		void getCircle(float r);
 		void reset();
 };
+<<<<<<< HEAD
 #endif
+=======
+
+>>>>>>> b9834d0b10c80870db1c58da0ad910a8f0826da0

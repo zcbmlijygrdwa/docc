@@ -77,6 +77,7 @@ void PID::setPID(float pIn, float iIn, float dIn){
 
 
 float PID::spin(float inputIn){
+<<<<<<< HEAD
 input = inputIn;
 	error = target - input;
 
@@ -98,6 +99,28 @@ input = inputIn;
 
 	}
 
+=======
+
+	input = inputIn;
+
+	if (!isFlipped) {
+
+		error = target - input;
+
+	} else {
+
+		error = input - target;
+
+	}
+
+	error_d = error - errorPrev;
+	error_i += error;
+	errorPrev = error;
+
+	output_to_plant = p * error + i * error_i + d * error_d;
+	output_to_plant += output_offset;
+	return output_to_plant;
+>>>>>>> b9834d0b10c80870db1c58da0ad910a8f0826da0
 
 }
 
